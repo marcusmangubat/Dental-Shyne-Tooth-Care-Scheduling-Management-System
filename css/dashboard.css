@@ -1,0 +1,73 @@
+.dashboard {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.card i {
+  font-size: 32px;
+}
+
+/* Custom colors for each icon */
+.card i.fa-user-doctor {
+  color: #d32f2f;
+}
+
+.card i.fa-user-injured {
+  color: #1976d2;
+}
+
+.card i.fa-calendar-plus {
+  color: #388e3c;
+}
+
+.card i.fa-hourglass-start {
+  color: #f57c00;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.card p {
+  margin: 5px 0 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .card {
+    justify-content: center;
+  }
+
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card i {
+    margin-bottom: 10px;
+  }
+}
